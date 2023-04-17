@@ -13,7 +13,7 @@ mongoose.connect(URI)
     console.log(err);
 });
 app.get('/', (req, res) => {
-    res.send("Hello There")
+    res.sendFile(__dirname + "/index.html")
 })
 app.get('/signup', (req, res) => {
     res.render("signup")
